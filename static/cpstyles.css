@@ -1,0 +1,48 @@
+body{
+  background-image: url("/static/shattered.png")
+}
+
+div.logo{
+	text-align: center;
+	padding-bottom: 50px;
+  font-family: Quicksand;
+}
+
+.backbtn a{
+	margin: 0;
+	text-decoration: none;
+	overflow: hidden;
+	position: fixed;
+	color: black;
+	top:0;
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	font-family: Quicksand
+}
+.backbtn a:hover{
+	color: green;
+}
+
+div.instructions{
+  text-align: center;
+  font-family: Quicksand;
+}
+.dbForm{
+  text-align: center;
+}
+div.dbinput{
+  text-align: center;
+  font-family: Quicksand;
+}
+
+
+div.createbtn{
+	padding-top: 100px;
+  text-align: center;
+  font-family: Quicksand;
+}
+
+.button{
+	font-size: 30px;
+}

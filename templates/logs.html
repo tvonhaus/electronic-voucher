@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='logsstyles.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='javascript/logs.js') }}"></script>
+    <head>
+        <div class="logo">
+                <img src="/static/medalogo.png">
+                eVoucher
+        </div>
+        <div id="log-parameters">
+            <input id="issue-box" type="checkbox" onclick="displayIssue()">Issue</input>
+            <input id="redeem-box" type="checkbox">Redeem</input>
+            <input id="voucher-box" type="checkbox">Voucher</input>
+            <button id="log-button" type="submit">Submit</button>
+        </div>
+    </head>
+
+    <body>
+        <div class="homebtn">
+            <a href="/home">HOME</a></li>
+        </div>                
+        <div class=log-list>
+            {% for item in logList %}
+            <li>{{item}}</li>
+            {% endfor %}
+        </div>
+        <div class="issue-list">
+            {% for item in issueList%}
+            <li>{{item}}</li>
+            {% endfor %}
+        </div>
+        <div class="redeem-list">
+            {% for item in redeemList%}
+            <li>{{item}}</li>
+            {% endfor %}   
+        </div>
+        <div class="voucher-list">
+            {% for item in voucherList %}
+            <li>{{item}}</li>
+            {% endfor %}
+        </div>
+    </body>
+</html>

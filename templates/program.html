@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='programstyles.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand" rel="stylesheet">
+  <head>
+    <title> MEDA - eVoucher</title>
+  	<link href="/static/medaicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  </head>
+
+  <div class="logo">
+    <img src="/static/medalogo.png">
+    eVoucher
+  </div>
+
+  <body>
+    <div class="homebtn">
+      <a href="home">HOME</a></li>
+    </div>
+
+    <div class="programName">
+      <p>{{dbname}}</p>
+    </div>
+    <div class="buttons">
+      <div class="issueBtn">
+        <a href="/program/issue?db={{dbname}}">Issue</a>
+      </div>
+      <div class="manageBtn">
+        <a href="/program/manage?db={{dbname}}">Manage</a>
+      </div>
+      <div class="searchBtn">
+        <a href="program/search?db={{dbname}}">Search</a>
+      </div>
+      <div class="logsBtn">
+        <a href="/program/logs?db={{dbname}}">Logs</a>
+      </div>
+    </div>
+
+  </body>
+</html>

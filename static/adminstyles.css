@@ -1,0 +1,56 @@
+body{
+  background-image: url("/static/shattered.png")
+}
+div.logo{
+	text-align: center;
+	padding-bottom: 50px;
+  color: black;
+  font-family: Quicksand;
+}
+
+.homebtn a{
+	margin: 0;
+	text-decoration: none;
+	overflow: hidden;
+	position: fixed;
+	color: black;
+	top:0;
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	font-family: Quicksand;
+}
+.homebtn a:hover{
+	color: green;
+}
+
+div.adminpanel{
+  margin: auto;
+  width: 10%;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+  margin: auto;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 20px 14px;
+  position: fixed;
+  text-align: center;
+  font-family: Quicksand;
+}
+
+li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Quicksand;
+}
+
+li a:hover{
+  color:green;
+  background-color: #E0E0E0
+}

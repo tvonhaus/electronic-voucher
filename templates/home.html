@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+	<title> MEDA - eVoucher</title>
+	<link href="/static/medaicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+</head>
+
+
+<body>
+  <header>
+    <ul>
+      <li><a href="info">INFO</a></li>
+      <li><a href="admin">ADMIN</a></li>
+      <li><a href="/">SIGN OUT</a></li>
+    </ul>
+
+  </header>
+  <div class="banner">
+    <img class="logo" src="/static/medalogo.png">
+    eVoucher
+  </div>
+  <div class ="mainpage">
+    <div class="programlist">
+      <p class="programButton">Programs</p>
+      <div class="dropdown-programs">
+        {%for item in databases%}
+            <a type="click" href="/program?db={{item}}" id="item_process">{{ item }}</a>
+        {% endfor %}      
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

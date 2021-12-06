@@ -1,0 +1,89 @@
+body{
+    background-image: url("/static/shattered.png")
+}
+  
+div.logo{
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: Quicksand;
+}
+  
+.homebtn a{
+    margin: 0;
+    text-decoration: none;
+    overflow: hidden;
+    position: fixed;
+    color: black;
+    top:0;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    font-family: Quicksand;
+    background-color: rgb(218, 220, 219);
+}
+
+.homebtn a:hover{
+    color: green;
+}
+
+div.log-list{
+    margin: auto;
+    float: left;
+    list-style-type: none;
+    display: block; 
+}
+
+div.log-list li{
+    font-family: Quicksand;
+    border-bottom: none; 
+    border-style: solid; 
+    background-color: rgba(16, 148, 16, 0.151); 
+    padding: 20px;
+}
+
+div.issue-list{
+    margin: auto;
+    float: left;
+    list-style-type: none;
+    display: block; 
+}
+div.issue-list li{
+    font-family: Quicksand;
+    border-bottom: none; 
+    border-style: solid; 
+    background-color: rgba(16, 18, 148, 0.151); 
+    padding: 20px;
+}
+
+div.redeem-list{
+    margin: auto;
+    float: left;
+    list-style-type: none;
+    display: block; 
+}
+div.redeem-list li{
+    font-family: Quicksand;
+    border-bottom: none; 
+    border-style: solid; 
+    background-color: rgba(16, 18, 148, 0.151);
+    padding: 20px;
+}
+
+div.voucher-list{
+    margin: auto;
+    float: left;
+    list-style-type: none;
+    display: block; 
+}
+div.voucher-list li{
+    font-family: Quicksand;
+    border-bottom: none; 
+    border-style: solid; 
+    background-color: rgba(16, 18, 148, 0.151); 
+    padding: 20px;
+}
+
+div.log-parameters{
+    font-family: Quicksand;
+    margin: auto;
+}
